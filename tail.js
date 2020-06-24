@@ -10,11 +10,11 @@ const tail = function(arr) {
   return arr.slice(1);
 };
 
-const result = tail([1]);
-assertEqual(result.length, 2); // ensure we get back two elements
-assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(result[1], "Labs"); // ensure second element is "Labs"
-assertEqual(result.length, 0)
+const str = tail([1]);
+assertEqual(str.length, 2); // ensure we get back two elements
+assertEqual(str[0], "Lighthouse"); // ensure first element is "Lighthouse"
+assertEqual(str[1], "Labs"); // ensure second element is "Labs"
+assertEqual(str.length, 0)
 
 /*
 const words = [];
