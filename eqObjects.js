@@ -31,9 +31,9 @@ const eqObjects = function(object1, object2) {
 		return false;
 	}	for (let key of keyCheck1) {
 		//if value for object1[key] is an array, then i should call the function
-		if (Array.isArray(object1[key]) !== Array.isArray(object2[key])) { //checking if array, check if type of
+		if (Array.isArray(object1[key]) !== Array.isArray(object2[key])) { //checking if they are both array, alternatively check if type of
 				return false;
-			} else if (Array.isArray(object1[key]) && Array.isArray(object2[key])){ //are they both array?
+			} else if (Array.isArray(object1[key]) && Array.isArray(object2[key])){ //if they both array, send to eqArrays 
 				if (!eqArrays(object1[key],object2[key])) { //comparing the values if both are array
 					return false;
 				}
