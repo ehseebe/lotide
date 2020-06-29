@@ -1,11 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`💯Assertion Passed: [${actual}] === [${expected}]`);
-  } else {
-    console.log(`💔Assertion Failed: [${actual}] !== [${expected}]`);
-  }
-};
-
 //input string
 //output a COUNT of letters in the sentence
 //ex. input: LHL, output: L: 2, H:1
@@ -26,4 +18,6 @@ const countLetters = function(str) {
 	return result;
 }
 
-console.log(countLetters('pineapple is the best fruit'));
+// console.log(countLetters('pineapple is the best fruit'));
+
+module.exports = countLetters;
