@@ -10,7 +10,7 @@ const map = function(array, callback) {
   return results;
 };
 
-module.export = map;
+module.exports = map;
 
 
 // console.log(eqArrays(assertArraysEqual(map(words, print)), ['take', 'it', 'easy', 'stay', 'breezy']));
